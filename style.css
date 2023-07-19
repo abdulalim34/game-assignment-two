@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.menu{
+    background-color: #40868b;
+    display: flex;
+    justify-content: space-between;
+}
+.menu a{
+    text-decoration: none;
+    padding: 20px;
+    color:white;
+    font-size: 1.4rem;
+}
+.menu a:hover{
+    background-color: tomato;
+    cursor: pointer;
+}
+.button-container{
+    padding: 30px;
+    gap: 20px;
+}
+
+
+
+     @media screen and (max-width:576px) {
+        .menu{
+            flex-direction: column;
+            padding: 15px;
+        }
+        .menu a{
+            background-color: indigo;
+            margin:10px 0;
+            text-align: center;
+            border-radius: 13px;
+        }
+     }
