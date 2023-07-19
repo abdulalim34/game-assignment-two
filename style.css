@@ -104,6 +104,34 @@ width: 50%;
         font-size: 3rem;
         font-weight: 800;
     }
+.funny-game{
+    background-image: linear-gradient(to bottom,red,blue);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: 2px solid red;
+    max-width: 1400px;
+    margin:50px auto 0;
+    min-height: 500px;
+}
+
+    .single-img{
+
+        
+    
+        border-radius: 20px;
+    padding: 15px 20px;
+    }
+    
+
+    .single-img img{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
 
 
 
@@ -143,7 +171,11 @@ width: 50%;
 
 
 
-
+    @media screen and (max-width:768px) {
+        .grid-container{
+            grid-template-columns: repeat(2,1fr)
+        }
+    }
 
 
 
@@ -175,4 +207,8 @@ width: 50%;
             padding-bottom: 30px;
             padding-top: 16px;
         }
+        .grid-container{
+            grid-template-columns: 1fr;
+        }
      }
+
