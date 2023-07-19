@@ -132,13 +132,127 @@ width: 50%;
         display: block;
         margin: 0 auto;
     }
+.discount-section{
+max-width: 1400px;
+margin: 0 auto;
+min-height: 200px;
+display: flex;
+align-items: center;
+}
+.discount-img{
+width: 50%;
+}
+.discount-img img{
+    width: 70%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+/* Game style start here */
+/* .game-container{
+    border: 2px solid red;
+    min-height: 400px;
+    margin-top: 50px;
+display: flex;
+}
+.single-game{
+border: 2px solid green;
+flex-basis: 300px;
+} */
+.game{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.games{
+    border: 1px solid tomato;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 150px;
+    border-radius: 20px;color: tomato;
+}
+.game-over{
+    margin-top: 50px;
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.game2-over{
+    margin-top: 50px;
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    font-size: 3rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+    .logo-icon{
+color: rgb(246, 85, 56);
 
+    }
 
+.footer{
+    border: 2px solid red;
+    height: 436px;
+    width: 1300px ;
+    background-color: #0B0223;
+    color: white;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.footer-link a{
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: white;
+     padding: 25px; ;
+}
+    .footer-link{
+        text-decoration: none;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        color: white;
+        padding: 25px;
 
-
-
-
-
+    }
+    .media{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        color: white;
+         padding: 25px; ;
+         margin-left: 40px;
+        
+    }
+    .media span{
+        
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        
+        color: white;
+         padding: 25px; ;
+         margin-left: 40px;
+        
+    }
+    
 
 
 
@@ -181,11 +295,12 @@ width: 50%;
 
 
      @media screen and (max-width:576px) {
-        .menu{
+        .menu,.logo{
             flex-direction: column;
             padding: 15px;
         }
-        .menu a{
+        
+        .menu a, .footer-link{
             background-color: indigo;
             margin:10px 0;
             text-align: center;
@@ -210,5 +325,10 @@ width: 50%;
         .grid-container{
             grid-template-columns: 1fr;
         }
+.game{
+    flex-direction:column;
+}
+
+
      }
 
